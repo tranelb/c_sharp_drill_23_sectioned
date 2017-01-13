@@ -10,6 +10,7 @@ namespace c_sharp_drill_23_sectioned
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
