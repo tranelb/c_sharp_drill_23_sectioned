@@ -89,7 +89,7 @@ namespace c_sharp_drill_23_sectioned
             Console.WriteLine(try1.OverRideMethod("dassdafsdf"));
             OverRider try2 = new OverRider();
             Console.WriteLine(try2.OverRideMethod("tasefffdgsdf"));
-            Console.ReadLine();
+            //Console.ReadLine();
 
             Temperature micTemp = Temperature.Low;
 
@@ -103,6 +103,8 @@ namespace c_sharp_drill_23_sectioned
 
             //nullable type?
             int nullVar = randArray[4];
+            Console.ReadLine();
+
         }
 
         abstract class Shape
@@ -115,7 +117,7 @@ namespace c_sharp_drill_23_sectioned
                 Console.WriteLine("Hello");
             }
         }
-
+        
         // A class can have many interfaces
         // An interface can't have concrete code
         public interface ShapeItem
