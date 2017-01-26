@@ -14,10 +14,14 @@ namespace c_sharp_drill_23_sectioned
             return num1 + num2;
 
         }
+        /*
         public static void Main()
         {
-            addNumsDelgt varDelgt = new addNumsDelgt(addNumMeth);
-
+            addNumsDelgt varDelgtObj = new addNumsDelgt(addNumMeth);
+            int result = varDelgtObj(2,3);
+            Console.WriteLine(result);
+            Console.ReadKey();
         }
+        */
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using c_sharp_drill_23_sectioned;
 
 
 
@@ -103,6 +104,36 @@ namespace c_sharp_drill_23_sectioned
 
             //nullable type?
             int nullVar = randArray[4];
+
+            addNumsDelgt varDelgtObj = new addNumsDelgt(Example_Delegate.addNumMeth);
+            int result = varDelgtObj(2, 3);
+            Console.WriteLine("Delegate result = " + result);
+
+            Console.WriteLine("*-*-*-*-*-*-");
+            MCDel_A delA_1 = new MCDel_A(Mulitcast_Delegate_A.DemoMethod1);
+            MCDel_A delA_2 = new MCDel_A(Mulitcast_Delegate_A.DemoMethod2);
+            MCDel_A delA_3 = new MCDel_A(Mulitcast_Delegate_A.DemoMethod3);
+            MCDel_A delA_4 = delA_1 + delA_2 + delA_3;
+            Console.WriteLine("pre delA_4() *-*-*-*-*-*-");
+            delA_4();
+            Console.WriteLine("post delA_4() *-*-*-*-*-*-");
+
+            //string multResult = delA_4();
+            Console.WriteLine("Multicast Delegate result = " + delA_4);
+
+            MCDel_B delB_1 = new MCDel_B(Mulitcast_Delegate_B.DemoMethod1B);
+            MCDel_B delB_2 = new MCDel_B(Mulitcast_Delegate_B.DemoMethod2B);
+            MCDel_B delB_3 = new MCDel_B(Mulitcast_Delegate_B.DemoMethod3B);
+
+            MCDel_B varDelObjB = new MCDel_B(Mulitcast_Delegate_B.DemoMethod1B);
+            varDelObjB += Mulitcast_Delegate_B.DemoMethod2B;
+            varDelObjB += Mulitcast_Delegate_B.DemoMethod3B;
+            varDelObjB -= Mulitcast_Delegate_B.DemoMethod2B;
+
+            Console.WriteLine("pre varDelObjB() *-*-*-*-*-*-");
+            varDelObjB();
+            Console.WriteLine("post varDelObjB() *-*-*-*-*-*-");
+
             Console.ReadLine();
 
         }
