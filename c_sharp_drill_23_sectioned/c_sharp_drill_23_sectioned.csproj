@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enumerable_Example.cs" />
     <Compile Include="Example_Delegate.cs" />
     <Compile Include="Mulitcast_Delegate_A.cs" />
     <Compile Include="Program.cs" />

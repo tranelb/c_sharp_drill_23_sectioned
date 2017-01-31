@@ -134,6 +134,11 @@ namespace c_sharp_drill_23_sectioned
             varDelObjB();
             Console.WriteLine("post varDelObjB() *-*-*-*-*-*-");
 
+            //Enumerable example
+            Enumerable_Example.Numbers enumVar = Numbers.Four;
+            Console.WriteLine("Enum example value is: " + enumVar);
+
+
             Console.ReadLine();
 
         }
