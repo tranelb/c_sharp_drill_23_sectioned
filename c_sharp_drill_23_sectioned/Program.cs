@@ -80,6 +80,12 @@ namespace c_sharp_drill_23_sectioned
 
         }
 
+        //Nullable type
+        static int? nullNumber()
+        {
+            return null;
+        }
+
         static void Main(string[] args)
         {
             test testVar = new test();
@@ -138,6 +144,9 @@ namespace c_sharp_drill_23_sectioned
             //Enumerable example
             Enumerable_Example.Numbers enumVar = Numbers.Four;
             Console.WriteLine("Enum example value is: " + enumVar);
+
+            //Nullable type
+            int? unknownNum = nullNumber();
 
 
             Console.ReadLine();
